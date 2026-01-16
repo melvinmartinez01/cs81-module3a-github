@@ -15,3 +15,20 @@ function howWasYourDay(response) {
     return "You good bro? Okay? Or is it a bad day?";
   }
 }
+
+
+//Create a grocery reminder list
+function groceryRemindList() {
+  const groceries = [
+    "milk",
+    "beef",
+    "chicken",
+    "yogurt",
+    "diapers",
+    "q tips",
+    "shampoo",
+    "sparkling beverages"
+  ];
+
+  return "Grocery list: " + groceries.join(", ");
+}
