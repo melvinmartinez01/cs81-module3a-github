@@ -49,3 +49,17 @@ function calculateGrade(score) {
     return "Invalid score. Please enter a number between 0 and 100.";
   }
 }
+
+
+//Hours slept feedback function
+function sleepHoursFeedback(Hours) {
+  if (hours >= 8 && hours <= 24) {
+    return "Your sleep duration is within the recommended range. Keep maintaining healthy sleep habits.";
+  } else if (hours >= 6 && hours < 8) {
+    return "You are getting less sleep than recommended. Consider improving your sleep schedule.";
+  } else if (hours > 0 && hours < 6) {
+    return "Your sleep duration is insufficient. Chronic sleep deprivation can negatively impact your health.";
+  } else {
+    return "Invalid input. Please enter a realistic number of sleep hours.";
+  }
+}
